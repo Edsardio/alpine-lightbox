@@ -1,3 +1,6 @@
+> This package only supports Alpine v3.x\
+> This package needs TailwindCSS
+
 # Alpine Lightbox
 
 Add a dynamic lightbox to your Alpine 3.x components with a custom directive.
