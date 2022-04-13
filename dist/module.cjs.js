@@ -26,7 +26,7 @@ function src_default(Alpine) {
                               x-transition:leave-end="opacity-0"></div>
                           <!-- This element is to trick the browser into centering the modal contents. -->
                           <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                          <div class="relative inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle max-w-7xl sm:w-full sm:p-6"
+                          <div class="relative inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle max-w-7xl sm:p-6"
                               x-transition:enter="transition ease-out duration-300"
                               x-transition:enter-start="transform opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                               x-transition:enter-end="transform opacity-100 translate-y-0 sm:scale-100"
