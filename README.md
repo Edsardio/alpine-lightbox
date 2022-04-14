@@ -1,5 +1,6 @@
 > This package only supports Alpine v3.x\
-> This package needs TailwindCSS
+> This package needs TailwindCSS\
+> This package currently does not work fantastic with the JIT compiler
 
 # Alpine Lightbox
 
