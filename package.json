@@ -1,6 +1,6 @@
 {
   "name": "@edsardio/alpine-lightbox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A dynamic lightbox using AlpineJS and TailwindCSS",
   "main": "dist/module.cjs.js",
   "module": "dist/module.esm.js",
