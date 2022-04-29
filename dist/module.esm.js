@@ -29,11 +29,16 @@ function src_default(Alpine) {
                                       </svg>
                                   </button>
                               </div>
-                              <img class="shadow-xl" x-bind:src="$store.lightbox.src">
+                              <img @click.away="$store.lightbox.show = false" class="shadow-xl" x-bind:src="$store.lightbox.src">
                           </div>
                       </div>
                   </div>
         `);
+    document.addEventListener("keyup", (e) => {
+      if (e.key === "Escape") {
+        Alpine.store("lightbox").show = false;
+      }
+    });
     Alpine.store("lightbox", {
       show: false,
       src: null,
