@@ -15,7 +15,7 @@ __export(exports, {
 function src_default(Alpine) {
   document.addEventListener("alpine:init", () => {
     let body = document.querySelector("body");
-    body.insertAdjacentHTML("afterbegin", `<div style="display: none;" x-bind:class="$store.lightbox.show ? '' : 'hidden'" class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true" x-show="$store.lightbox.show" x-data>
+    body.insertAdjacentHTML("afterbegin", `<div style="display: none;" x-bind:class="$store.lightbox.show ? '' : 'hidden'" class="fixed z-10 inset-0 overflow-y-auto alpine-lightbox" aria-labelledby="modal-title" role="dialog" aria-modal="true" x-show="$store.lightbox.show" x-data>
                       <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                           <div x-on:click="$store.lightbox.toggle()" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"
                               x-transition:enter="ease-out duration-300"
@@ -42,7 +42,7 @@ function src_default(Alpine) {
                                       </svg>
                                   </button>
                               </div>
-                              <img @click.away="$store.lightbox.show = false" class="shadow-xl" x-bind:src="$store.lightbox.src">
+                              <img @click.away="$store.lightbox.show = false" class="shadow-xl alpine-lightbox-image" x-bind:src="$store.lightbox.src">
                           </div>
                       </div>
                   </div>
